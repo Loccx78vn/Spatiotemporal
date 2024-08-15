@@ -1,0 +1,31 @@
+---
+title: "Introduction"
+author: "Xuan Loc"
+format: 
+  html:
+    code-fold: true
+    code-tools: true
+---
+
+```{r}
+## Call packages:
+pacman::p_load(rio,
+               here,
+               janitor,
+               tidyverse,
+               dplyr,
+               magrittr,
+               ggplot2,
+               purrr,
+               lubridate,
+               knitr,
+               shiny)
+```
+
+```{r}
+#| warning: false
+#| message: false
+library(rgdal)
+hrmeteo = readRDS("input/hrtemp2006_meteo.rds")
+str(hrmeteo)
+```
